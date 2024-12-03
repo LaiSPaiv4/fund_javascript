@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* Folha de estilo para os exercicios de JavaScript */
+/* 
+paleta de cores deste site:
+#2f4858 //footer
+#265667 
+#136473
+#00737a //nav
+#00817d
+#008f7a //petrolio
+#007ec3 //azul escuro
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: black; */
+}
+
+body {
+
+    /* background-image: linear-gradient(to bottom,#00bad3 50%, #00728a 100%);
+    background-repeat: repeat; */
+    background-image: linear-gradient(to bottom, #6634f0 50%, #7a1daf 100%);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    color: rgb(214, 202, 185);
+    font-family: Arial, ;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    justify-content: flex-start;
+}
+
+header {
+    background-color: #516af8;
+    height: 135px;
+    border-radius: 15px;
+    /* border-color: #00bad3; */
+    border: solid #f150a0 3px;
+    padding: 7px;
+}
+
+nav {
+    background-color: #f5b868;
+    height: 35px;
+    border-radius: 15px;
+    /* border-color: #00bad3; */
+    border: solid #8f27b8 3px;
+    padding: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+main {
+    background-color: #8092f8;
+    /* height: auto; */
+    height: 100%;
+    border-radius: 15px;
+    /* border-color: #00bad3; */
+    border: solid #ff6196 3px;
+    padding: 2%;
+}
+
+footer {
+    background-color: #300d83;
+    height: 85px;
+    border-radius: 15px;
+    /* border-color: #00bad3; */
+    border: solid #ff4ac3 3px;
+    padding: 7px;
+     
+}
