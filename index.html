@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="shortcut icon" href="/assents/gamepad.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+  <link rel="stylesheet" href="assents/style.css">
+</head>
+
+<body>
+ 
+  <main>
+    <h1>Snake Run</h1>
+
+    <!-- "span" seria o objeto mudável independente de qualquer jogo-->
+    <div class="score">Score: <span class="score--value">00</span></div>
+
+     <!-- quantidade de pontos sendo obtidos-->
+    <div class="menu-screen">
+
+     <!-- tela de menu onde voce inicia o jogo-->
+     <div class="pause-overlay">Pausado</div>
+
+      <span class="game-over">IMPRESTÁVEL!!!🥱🙄</span>
+      <!-- seria o fim do jogo-->
+
+      <span class="final-score">score <span>00</span></span>
+      <!-- pontos obtidos e acumulados no final do jogo-->
+
+      <button class="btn-play">start</button>
+      <!-- botão que começa o jogo -->
+
+      <!-- <button class="pause">pause</button> -->
+      <!-- botão que pausa o jogo-->
+
+        <span class="material-symbols-outlined">
+          <!-- conjunto de icones do google -->
+
+          play_circle
+          <!-- esse seria o icone do botão de play, que representa a ação de reproduzir "play"-->
+        </span>
+      <button> Jogar de Novo !?
+      </button>
+      </span>
+
+    </div>
+    <canvas width="600" height="600"></canvas>
+    <!-- canvas seria a tela do jogo (seria largura e altura do jogo)-->
+
+    <div  class="gif-container">
+      <img id="Snakezinha" src="/assents/snakezinha.gif"  alt="snakezinha" > 
+      
+      </div>
+      <!-- para posicionar o gif temos que deixar ele dentro do main, próximo ao canvas , para que ele fique na tela do jogo -->
+
+  </main>
+  <!-- <div  class="gif-container">
+    <img id="Snakezinha" src="/assents/snakezinha.gif"  alt="snakezinha" >  
+    </div>
+   -->
+   
+    <footer>Desenvolvido por Lais e Henrique -2024</footer>
+
+  <!--<canvas width="600" height="400"></canvas>-->
+  <!--<canvas id="stage" width="600" height="600"></canvas>-->
+  <script src="assents/script.js"></script>
+
+</body>
+
+</html>
