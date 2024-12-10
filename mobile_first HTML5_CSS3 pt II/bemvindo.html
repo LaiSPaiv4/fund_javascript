@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem ao espaço final</title>
+
+    <style>
+        body{
+            background-image: url(/assets/space_blue.gif);
+            width: 100%;
+            height: 90%;
+            background-position: center center;
+            background-size: cover;
+        }
+        header {
+            background-color: #4ebce7f6;; 
+            border-radius: 7px;
+            /* flex-direction: center; */
+          position:
+        }
+        menu {
+            display: flex;
+        } 
+        main {
+    padding: 20px;
+    background-color: #ffe194;
+    border-radius: 7px 7px 0px 0px;
+    /* box-shadow: 10px 10px 20px #ffe194; */
+    margin-top: 7px;
+    padding: 3px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    border-color: 2px rgb(44, 44, 44);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo h1 {
+    color: #f8f2f2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    border-color: 2px rgb(44, 44, 44);
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-color: 2px rgb(44, 44, 44);
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    /**/
+    border-color: 2px rgb(44, 44, 44);
+}
+
+.nav-link:hover {
+    /*opacity: 0.8;*/
+    background-color: #4f1e5e;
+    /**/
+    border-color: 2px rgb(44, 44, 44);
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #508d9c;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    /**/
+    border-color: 2px rgb(44, 44, 44);
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    /*editar o first mobile para editar o textarea e result*/
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+main {
+    display: grid;
+    place-items: right;
+    overflow: hidden;
+    text-align: justify;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
+    padding-right: 0.9em;
+    background-color: #2259ac9a;
+    background-image: none;
+    border-radius: 15px;
+}
+
+
+p {
+    line-height: 1.6em;
+   color: #ffffffc4;
+}
+
+/**/
+.i-img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+
+    /*
+    width: 50vw;
+    max-width: 79vw;
+    */
+
+}
+
+textarea {
+    width: 95%;
+    height: 8rem;
+}
+
+#result {
+    padding: 0.9rem;
+    background-color: rgb(182, 149, 202);
+    color: white;
+    font-weight: 770;
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #a891d4;
+    border-radius: 7px;
+
+    
+}
+
+.container {
+    flex-direction: row;
+    align-items: center;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Final Space</h1>
+            </div>
+            <div class="nav-list">
+                
+                    
+            </div>
+            <!--<div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+            -->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./icon_person2.png" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            
+               
+
+            <!--<div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+            -->
+        </div>
+    </header>
+    <main>
+
+
+        <h2>A Jornada pelo Universo</h2>
+
+        <div class="container" id="container">
+            <img class="i-img" src="./assets/family space.png" alt= />
+
+
+            <p>
+                Final Space é uma série de animação de ficção científica criada por Olan Rogers, que mistura ação, comédia e drama. A história segue Gary Goodspeed, um jovem impulsivo e desajeitado que, após ser preso em uma nave espacial, faz uma amizade improvável com Mooncake, uma criatura fofa, mas com um poder destrutivo imenso. Juntos, eles embarcam em uma jornada épica pelo universo, tentando impedir que forças cósmicas apocalípticas destruam tudo o que conhecem. </p>
+            <p>
+                Gary é acompanhado por uma equipe de personagens únicos, incluindo Quinn Airgon, uma comandante da Infinity Guard com um passado trágico e uma missão de salvar o universo; Gatito, um guerreiro felino que, embora inicialmente um inimigo, acaba se unindo ao time de heróis; H.U.E., uma inteligência artificial sarcástica que oferece suporte técnico e logístico à missão; e Avocato, um ex-vilão, guerreiro felino e pai de Gatito, que também se junta ao time para lutar contra as forças do mal.  </p>
+            <p>  Além disso, há Nightfall, uma habilidosa assassina e ex-aluna de Quinn, que se torna uma aliada crucial na luta contra os vilões; Tribore, um alienígena gigantesco e excêntrico, que se torna um amigo leal de Gary e parte da equipe; e Clarence, um personagem complexo que possui habilidades incomuns e se envolve em algumas das tramas mais arriscadas da série. </p> 
+            <p>Juntos, eles enfrentam perigos intergalácticos e tentam desvendar os mistérios por trás do poder de Mooncake e a ameaça crescente de Invictus, um vilão cósmico que deseja destruir o universo e remodelá-lo à sua vontade. Ao longo da série, Gary e seus aliados lidam com desafios cada vez maiores, enfrentando sacrifícios pessoais, traições e momentos emocionais profundos.
+                  </p>
+               <p>Final Space é uma jornada emocionante, onde momentos de comédia se misturam com cenas dramáticas, explorando temas como amizade, sacrifício e o destino. A série culmina em um confronto épico com Invictus, trazendo uma batalha cósmica pela sobrevivência do universo. Com personagens memoráveis e um vasto universo, a série oferece uma experiência cheia de ação e emoção, enquanto o bem e o mal colidem em uma luta pelo cosmos.
+  </p>
+
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+
+    <footer>&copy; 2024 - Lais and Henrique</footer>
+
+    </footer>
+
+
+    
+</body>
+</html>
